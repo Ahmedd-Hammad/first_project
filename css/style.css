@@ -1,0 +1,619 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-family: "Dancing Script", cursive;
+    --main-background-colour: rgb(34, 40, 49);
+}
+
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+
+
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+nav {
+    padding: 20px 0 0 0 !important;
+}
+
+.navbar-nav {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+}
+
+.navbar-nav a:hover {
+    color: #ffbe33;
+
+}
+
+.active {
+    color: #ffbe33 !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.order {
+    position: relative;
+    left: 55%;
+    transform: translateX(-55%);
+}
+
+.order a {
+    padding: 10px;
+    color: white;
+}
+
+.order a:hover {
+    color: #ffbe33;
+}
+
+.order a button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background-color: #ffbe33;
+    color: white;
+}
+
+.order a button:hover {
+    background-color: #f8b313;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.home .container .text {
+    color: white;
+}
+
+.home .container .text h1 {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.home .container .text p {
+    font-size: 14px;
+    max-width: 500px;
+}
+
+.home .container .text a button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background-color: #ffbe33;
+    color: white;
+}
+
+.home .container .text a button:hover {
+    background-color: #f8b313;
+}
+
+.home .container .text .three_points {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.home .container .text li {
+    text-align: center;
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    background-color: #ddd;
+    margin: 10px 0 0 10px;
+}
+
+.home .container .text .active {
+    background-color: #ffbe33;
+}
+
+.discount .container .row {
+    margin-top: 100px;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.discount .container .row .box {
+    background-color: rgb(34, 40, 49);
+    color: white;
+    display: flex;
+    border-radius: 5px;
+}
+
+.discount .container .row .box .image {
+    margin: 15px 15px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ffbe33;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.discount .container .row .box .image .img-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffbe33;
+    background-image: url(../img/o1.jpg);
+    background-size: cover;
+    transition: all 0.5s;
+
+}
+
+.discount .container .row .box .image .img-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/o2.jpg);
+    background-size: cover;
+    transition: all 0.5s;
+
+}
+
+.discount .container .row .box .image:hover .img-1 {
+    transform: scale(1.1);
+}
+
+.discount .container .row .box .image:hover .img-2 {
+    transform: scale(1.1);
+}
+
+.discount .container .row .box .info h3 {
+    margin-top: 30px;
+    font-family: var(--main-font-family);
+    font-size: 24px;
+}
+
+.discount .container .row .box .info p {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+}
+
+.discount .container .row .box .info p span {
+    font-size: 16px;
+}
+
+.discount .container .row .box .info a button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background-color: #ffbe33;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.discount .container .row .box .info a button:hover {
+    background-color: #f8b313;
+}
+
+.menue .container .view_menue h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--main-font-family);
+    color: black;
+}
+
+.menue .container .view_menue ul li a {
+    color: black;
+}
+
+.menue .container .view_menue ul li .active {
+    background-color: rgb(34, 40, 49);
+    color: white !important;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+
+.view_menue .row {
+    margin-top: 50px;
+}
+
+.view_menue .row .boxx {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.view_menue .row .boxx .image {
+    background-color: #f1f2f3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 0 0 0 45px;
+    text-align: center;
+    padding: 20px;
+    /* overflow: hidden; */
+    height: 250px;
+    position: relative;
+    /* z-index: 100; */
+}
+
+.view_menue .row .boxx .image::before {
+
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -7px;
+    border-width: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: transparent transparent #222831 #222831;
+}
+
+
+
+.view_menue .row .boxx .image img {
+    transition: all 0.5s;
+}
+
+.view_menue .row .boxx .image:hover img {
+    transform: scale(1.1);
+}
+
+.view_menue .row .boxx .tex {
+    background-color: var(--main-background-colour);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 25px;
+}
+
+.view_menue .row .boxx .tex a {
+    color: white;
+    background-color: #ffbe33;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px 7px;
+    position: absolute;
+    left: 80%;
+    text-align: center;
+}
+
+
+.menue a button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 45px;
+    background-color: #ffbe33;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menue a button:hover {
+    background-color: #f8b313;
+
+}
+
+.about {
+    background-color: var(--main-background-colour);
+}
+
+.about .row {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+@media (max-width: 768px) {
+    .about .row {
+        flex-direction: column-reverse;
+    }
+
+}
+
+.about .im img {
+    max-width: 430px;
+    margin-bottom: 50px;
+
+}
+
+.about .texx {
+    color: white;
+}
+
+.about .texx h2 {
+    font-family: var(--main-font-family);
+    font-size: 40px;
+
+}
+
+
+.about .texx a button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    background-color: #ffbe33;
+    color: white;
+    margin-top: 10px;
+}
+
+.about .texx a button:hover {
+    background-color: #f8b313;
+}
+
+
+
+
+.book_table h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: var(--main-font-family);
+    font-size: 40px;
+}
+
+
+.book_table .form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.book_table .form form input,
+select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #999999;
+    outline: none;
+}
+
+.book_table .form form a button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background-color: #ffbe33;
+    color: white;
+}
+
+.book_table .form form a button:hover {
+    background-color: #f8b313;
+
+}
+
+.book_table .fram {
+    position: relative;
+}
+
+.book_table .fram iframe {
+    border-radius: 5px;
+    width: 100%;
+    height: 320px;
+    position: relative;
+
+}
+
+.book_table .fram iframe::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.review h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: var(--main-font-family);
+    font-size: 40px;
+    text-align: center;
+}
+
+.review .opinion .infoo {
+    color: white;
+    background-color: var(--main-background-colour);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.review .opinion .their_img {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100px;
+    height: 100px;
+    border: 5px solid #f8b313;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.review .opinion .their_img::before {
+    content: "";
+    position: absolute;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent #f8b313 transparent;
+    left: 27px;
+    top: -35px;
+
+
+}
+
+.review .opinion .their_img img {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.review .scroll {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+}
+
+.review .scroll button {
+    background-color: #f8b313;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.footer {
+    background-color: var(--main-background-colour);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer .row {
+    align-items: center;
+}
+
+
+.footer .bo_one {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .bo_one h4 {
+    font-family: var(--main-font-family);
+    font-size: 28px;
+}
+
+.footer .bo_one a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+.footer .bo_one a:hover {
+    color: #f8b313;
+}
+
+.footer .bo_one a i {
+    padding: 5px;
+}
+
+.footer .bo_two {
+    text-align: center;
+}
+
+.footer .bo_two .fe {
+    font-size: 38px;
+    font-family: var(--main-font-family);
+    color: white;
+    text-decoration: none;
+}
+
+.footer .bo_two p {
+    color: #dbdbdb;
+}
+
+.footer .bo_two .social {
+
+    margin: 10px 0;
+}
+
+
+.footer .bo_two .social a {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #222831;
+    transition: all 0.5s;
+}
+
+.footer .bo_two .social a:hover {
+    color: #ffbe33;
+}
+
+.footer .bo_three {
+    text-align: center;
+}
+
+.footer .bo_three h4 {
+    font-size: 38px;
+    font-family: var(--main-font-family);
+}
+
+.footer .bo_three p {
+    color: #dbdbdb;
+}
+
+.footer .last_tex {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 3;
+}
